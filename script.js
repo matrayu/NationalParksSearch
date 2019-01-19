@@ -2,7 +2,6 @@
 
 const searchURL = 'https://developer.nps.gov/api/v1/parks';
 const parksApi = 'gDz5lLLWu7hY98JWSKkGvavTYAjeRj0SLI8uX7JL'
-const googleGeoApi = 'AIzaSyCQIlfCNs73wljmt2yBoHkM_YuMZOXA34g'
 
 function watchForm() {
     console.log('watchForm ran');
