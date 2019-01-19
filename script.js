@@ -56,10 +56,10 @@ function getResultsArray(arr) {
     for(let i = 0; i < arr.data.length - 1; i++) {
         $('.parks').append(`
             <div class="park-results">
-                <h2>${arr.data[i].fullName}</h2>
+                <h3><a href="${arr.data[i].url}" target="_blank">${arr.data[i].fullName}</a></h3>
+                <p class="park_url"><a class="park_urls" href="${arr.data[i].url}" target="_blank">${arr.data[i].url}</a></p>
                 <p>${arr.data[i].description}</p>
                 <p>${getAddress(arr.data[i].addresses)}</p>
-                <a href="${arr.data[i].url}" target="_blank">Link to ${arr.data[i].name} Park website</a> 
             </div>`)
     };
     $('.results').removeClass('hidden')

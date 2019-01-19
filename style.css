@@ -4,6 +4,8 @@
   
   body {
     font-family: 'Roboto', sans-serif;
+    margin: 5px 12px;
+    min-width: 296px;
   }
   
   input {
@@ -29,4 +31,72 @@
   
   .hidden {
     display: none;
+  }
+
+  h1 {
+    width: 100%;
+    margin: 41px auto;
+    text-align: center;
+  }
+
+  .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+  }
+
+  .form-row label {
+    text-align: left;
+    padding-right: 10px;
+  }
+
+  input[type=submit] {
+    background-color: rgb(64, 104, 135);
+    border: none;
+    color: white;
+    padding: 9px 83px;
+    text-decoration: none;
+    margin: 0px 2px;
+    cursor: pointer;
+  }
+
+  input[list=states], input[type=number] {
+    width: 120px;
+    font-size: 16px;
+    border: 1px solid black;
+  }
+
+  .form-row label[for=max-results] {
+    text-align: left;
+    padding-right: 15px;
+  }
+
+  h2 {
+    background: #bbb;
+  }
+
+  h3 {
+    margin-bottom: 3px;
+  }
+
+  .park_url {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  a.park_urls:link, a.park_urls:visited, a.park_urls:hover, a.park_urls:active {
+    text-decoration: none;
+    color: #006621;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .flex-container {
+    margin-bottom: 42px;
   }

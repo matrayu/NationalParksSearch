@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>National Parks Search</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
 </head>
 
 <body>
@@ -15,73 +14,77 @@
         <h1>Search for National Parks to Visit</h1>
 
         <form id="js-form">
-            <label for="search-term">Enter a State</label>
-            <input list="states" name="state" id="js-state" required>
-            <datalist id="states">
-                <option value="AL">Alabama (AL)</option>
-                <option value="AK">Alaska (AK)</option>
-                <option value="AZ">Arizona (AZ)</option>
-                <option value="AR">Arkansas (AR)</option>
-                <option value="CA">California (CA)</option>
-                <option value="CO">Colorado (CO)</option>
-                <option value="CT">Connecticut (CT)</option>
-                <option value="DE">Delaware (DE)</option>
-                <option value="DC">District Of Columbia (DC)</option>
-                <option value="FL">Florida (FL)</option>
-                <option value="GA">Georgia (GA)</option>
-                <option value="HI">Hawaii (HI)</option>
-                <option value="ID">Idaho (ID)</option>
-                <option value="IL">Illinois (IL)</option>
-                <option value="IN">Indiana (IN)</option>
-                <option value="IA">Iowa (IA)</option>
-                <option value="KS">Kansas (KS)</option>
-                <option value="KY">Kentucky (KY)</option>
-                <option value="LA">Louisiana (LA)</option>
-                <option value="ME">Maine (ME)</option>
-                <option value="MD">Maryland (MD)</option>
-                <option value="MA">Massachusetts (MA)</option>
-                <option value="MI">Michigan (MI)</option>
-                <option value="MN">Minnesota (MN)</option>
-                <option value="MS">Mississippi (MS)</option>
-                <option value="MO">Missouri (MO)</option>
-                <option value="MT">Montana (MT)</option>
-                <option value="NE">Nebraska (NE)</option>
-                <option value="NV">Nevada (NV)</option>
-                <option value="NH">New Hampshire (NH)</option>
-                <option value="NJ">New Jersey (NJ)</option>
-                <option value="NM">New Mexico (NM)</option>
-                <option value="NY">New York (NY)</option>
-                <option value="NC">North Carolina (NC)</option>
-                <option value="ND">North Dakota (ND)</option>
-                <option value="OH">Ohio (OH)</option>
-                <option value="OK">Oklahoma (OK)</option>
-                <option value="OR">Oregon (OR)</option>
-                <option value="PA">Pennsylvania (PA)</option>
-                <option value="RI">Rhode Island (RI)</option>
-                <option value="SC">South Carolina (SC)</option>
-                <option value="SD">South Dakota (SD)</option>
-                <option value="TN">Tennessee (TN)</option>
-                <option value="TX">Texas (TX)</option>
-                <option value="UT">Utah (UT)</option>
-                <option value="VT">Vermont</option>
-                <option value="VA">Virginia</option>
-                <option value="WA">Washington</option>
-                <option value="WV">West Virginia</option>
-                <option value="WI">Wisconsin</option>
-                <option value="WY">Wyoming</option>
-            </datalist>
-            </input>
-
-            <br><br>
-            Max Results
-            <input type="number" name="quantity" id="js-maxResults" min=1 max=50 value="10">
-            <br><br>
-            <input type="submit" value="Search">
+            <div class="flex-container">
+                <div class="form-row">
+                    <label for="search-term">Enter a State:</label>
+                    <input list="states" name="state" id="js-state" required>
+                    <datalist id="states">
+                        <option value="AL">Alabama (AL)</option>
+                        <option value="AK">Alaska (AK)</option>
+                        <option value="AZ">Arizona (AZ)</option>
+                        <option value="AR">Arkansas (AR)</option>
+                        <option value="CA">California (CA)</option>
+                        <option value="CO">Colorado (CO)</option>
+                        <option value="CT">Connecticut (CT)</option>
+                        <option value="DE">Delaware (DE)</option>
+                        <option value="DC">District Of Columbia (DC)</option>
+                        <option value="FL">Florida (FL)</option>
+                        <option value="GA">Georgia (GA)</option>
+                        <option value="HI">Hawaii (HI)</option>
+                        <option value="ID">Idaho (ID)</option>
+                        <option value="IL">Illinois (IL)</option>
+                        <option value="IN">Indiana (IN)</option>
+                        <option value="IA">Iowa (IA)</option>
+                        <option value="KS">Kansas (KS)</option>
+                        <option value="KY">Kentucky (KY)</option>
+                        <option value="LA">Louisiana (LA)</option>
+                        <option value="ME">Maine (ME)</option>
+                        <option value="MD">Maryland (MD)</option>
+                        <option value="MA">Massachusetts (MA)</option>
+                        <option value="MI">Michigan (MI)</option>
+                        <option value="MN">Minnesota (MN)</option>
+                        <option value="MS">Mississippi (MS)</option>
+                        <option value="MO">Missouri (MO)</option>
+                        <option value="MT">Montana (MT)</option>
+                        <option value="NE">Nebraska (NE)</option>
+                        <option value="NV">Nevada (NV)</option>
+                        <option value="NH">New Hampshire (NH)</option>
+                        <option value="NJ">New Jersey (NJ)</option>
+                        <option value="NM">New Mexico (NM)</option>
+                        <option value="NY">New York (NY)</option>
+                        <option value="NC">North Carolina (NC)</option>
+                        <option value="ND">North Dakota (ND)</option>
+                        <option value="OH">Ohio (OH)</option>
+                        <option value="OK">Oklahoma (OK)</option>
+                        <option value="OR">Oregon (OR)</option>
+                        <option value="PA">Pennsylvania (PA)</option>
+                        <option value="RI">Rhode Island (RI)</option>
+                        <option value="SC">South Carolina (SC)</option>
+                        <option value="SD">South Dakota (SD)</option>
+                        <option value="TN">Tennessee (TN)</option>
+                        <option value="TX">Texas (TX)</option>
+                        <option value="UT">Utah (UT)</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </datalist>
+                    </input>
+                </div>
+                <div class="form-row">
+                    <label for="max-results">Max Results:</label>
+                    <input type="number" name="quantity" id="js-maxResults" min=1 max=50 value="10">
+                </div>
+                <div class="submit form-row">
+                    <input type="submit" value="Search">
+                </div>
+            </div>
         </form>
 
         <p id="js-error-message" class="error-message"></p>
         <section class="results hidden">
-            <h2>Search Results</h2>
             <div class="parks">
             </div>
         </section>
